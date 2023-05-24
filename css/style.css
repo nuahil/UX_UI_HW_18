@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    width: auto;
+    padding: 1%;
+    align-content: end;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+.nav{
+    width: 73%;
+    padding:1%;
+}
+ul{
+    width: 10%;
+    margin-left: auto;
+    list-style: none;
+    width: fit-content;
+    font-size: 20px;
+}
+.heroImg{
+    height: 600px;
+    padding: 25px;
+}
+#foo img [src="/Images/Liam Photo.png"] {
+    width: 300px;
+}
+.content{
+    display: flex;
+    justify-content: flex-end;
+}
+p {
+    padding: 3%;
+}
+.NAME {
+    padding:0%
+    
+}
+.EMAIL {
+    padding: 0%;
+}
+.PHONE {
+    padding: 0%;
+}
+footer{
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+}
