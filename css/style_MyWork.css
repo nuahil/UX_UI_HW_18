@@ -15,17 +15,6 @@ header {
     width: 40px;
     height: 40px;
 }
-.heroImg {
-    padding: 25px;
-    width: 100%;
-}
-
-.heroImg img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
 .nav{
     width: 73%;
     padding:1%;
@@ -37,12 +26,14 @@ ul{
     width: fit-content;
     font-size: 20px;
 }
-
+.heroImg{
+    height: 600px;
+    padding: 25px;
+}
 #foo img [src="/Images/Liam Photo.png"] {
     width: 300px;
 }
 .content{
-    width: 100%;
     display: flex;
     justify-content: flex-end;
 }
@@ -65,37 +56,21 @@ footer{
     padding-bottom: 1%;
     padding-left: 10%;
 }
-.flexContainer {
-    display: flex;
+.workGrid {
+    display: grid; /* Use flexbox to create a flexible container */
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 80px;
+}
+.workGrid a img {
+    width: 100%; /* Set the width to 100% of the container */
+    height: auto; /* Automatically adjust the height to maintain aspect ratio */
+    
 }
 
-.MySkills {
-    margin-top: 20px;
-    clear: both;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-.SkillsList {
-    width: 50%;
-}
-.LeftHero {
-    width: 50%;
-}
-.Intro{
-    width: 50%;
-}
-.SkillsList {
-    font-family: Helvetica, "Gill Sans", sans-serif;
-    font-weight:lighter;
-  }
-
-@media (max-width: 768px) {
-    .flexContainer {
-        flex-direction: column;
+@media screen and (max-width: 768px) {
+    .workGrid {
+        grid-template-columns: 1fr;
     }
 
-    .MySkills > div {
-        width: 100%;
-    }
 }
